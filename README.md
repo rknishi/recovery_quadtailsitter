@@ -1,4 +1,4 @@
-###Recovery Quadtailsitter
+# Recovery Quadtailsitter
 
 This is a project to simulate recovery controllers for a quadrotor tailsitter without control surfaces. Two different controllers are designed: one based on PID and another on NMPC.
 
