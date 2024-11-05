@@ -33,7 +33,6 @@ if(BUILD_TESTING)
 endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/CustomControllerOutput.msg"
   "msg/FwOdometry.msg"
   "msg/ThrustTorqueSetpoint.msg"
 )
