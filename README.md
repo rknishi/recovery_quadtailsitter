@@ -9,7 +9,13 @@ To use this repository, you must have PX4 SITL simulator, ROS2, and Gazebo Class
 
 After installing the simulator, you must clone/download the repository into your local folder and add/merge the folders to the following packages within the PX4 SITL catkin directory:
 
-- 
+- **quadtailsitter_link_velocity:** merge with /Tools/simulation/gazebo-classic/sitl_gazebo-classic/models
+- **airframes:** merge with /ROMFS/px4fmu_common/init.d-posix/airframes
+- **custom_msg:** merge with /msg or add to your ROS2 workspace
+- **plugin:** in /Tools/simulation/gazebo-classic/sitl_gazebo-classic/
+     - add package.xml and CMakeLists.txt
+     - /src/ add set_vel_plugin.cpp
+     - /include/ add set_vel_plugin.h
 
 
 
