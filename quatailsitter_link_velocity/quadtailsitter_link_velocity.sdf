@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+  <model name='quadtailsitter_link_velocity'>
+    <include>
+      <uri>model://quadtailsitter</uri>
+    </include>
+    <!--add link velocity plugin-->
+    <plugin name='set_vel_plugin' filename='libset_vel_plugin.so'>
+      <robotNamespace/>
+      <link_name>quadtailsitter::base_link</link_name>
+      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
+      <motorNumber>3</motorNumber>
+      <xSetpoint>120.0</xSetpoint>
+      <xSetpoint>0.0</xSetpoint>
+      <ySetpoint>0.0</ySetpoint>
+      <!-- <zSetpoint>50.0</zSetpoint> -->
+      <zSetpoint>50.0</zSetpoint>
+      <zSetpoint2>-0.5</zSetpoint2>
+      <rollSetpoint>0.0</rollSetpoint>
+      <!--<pitchSetpoint>4.0</pitchSetpoint>
+      <yawSetpoint>0</yawSetpoint> -->
+      <pitchSetpoint>3.14</pitchSetpoint>
+      <yawSetpoint>0.0</yawSetpoint> 
+      <duration>2.0</duration>
+      <z_duration>1.0</z_duration>      <!--<duration>0.5</duration> -->
+    </plugin>
+  </model>
+</sdf>
