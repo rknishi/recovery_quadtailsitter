@@ -16,5 +16,29 @@ After installing the simulator, you must clone/download the repository into your
      - add package.xml and CMakeLists.txt
      - /src/ add set_vel_plugin.cpp
      - /include/ add set_vel_plugin.h
+ 
+
+# Controllers
+
+To run the controllers, open three different terminals. 
+1. **Terminal 1**: Run the `odometry_publisher`:
+   ```bash
+   python3 odometry_publisher.py
+2. **Terminal 2**: Run the `controller_node`:
+   ```bash
+   python3 controller_node.py
+3. **Terminal 3**: Run the desired controller, either the `PID_node` or the `NMPC_node`:
+
+
+
+    a. For the PID:
+    ```bash
+   python3 PID_node.py
+   ```
+   b. For the NMPC:
+   ```bash
+   python3 MPC_node.py
+   ```
+   
 
 
